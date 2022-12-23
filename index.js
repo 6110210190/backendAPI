@@ -12,7 +12,7 @@ app.use('/api', postRoute);
 
 
 app.get('/', (req, res) => {
-    res.send('Welcome to Mieang karm Management');
+    res.send('Welcome to Mieang karm Management!!');
 });
 
 mongoose.connect(process.env.DB_CONNECTION, () => {
