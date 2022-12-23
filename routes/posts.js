@@ -8,9 +8,12 @@ router.get('/orders', async (req, res) => {
     try {
         const orders = await Order.find();
         res.json(orders);
+        console.log('Get data successfully!!');
     } catch (error) {
         res.json({message: err});
+        console.log(err);
     }
+    
 });
 
 //เพิ่มข้อมูลใน Database
@@ -22,8 +25,10 @@ router.post('/add', async (req, res) => {
     try {
         const saveOrder = await order.save();
         res.json(saveOrder);
+        console.log('Add order successfully!!');
     } catch (error) {
         res.json({message: err});
+        console.log(err);
     }
 });
 

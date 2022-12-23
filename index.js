@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 mongoose.connect(process.env.DB_CONNECTION, () => {
-    console.log('Database connected successfully');
+    console.log('Database connected successfully!!');
 })
 
 app.listen(PORT);
